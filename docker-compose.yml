@@ -3,6 +3,7 @@ services:
     image: postgres:latest
     container_name: postgres-spring-boot
     environment:
+      POSTGRES_DB: nshon
       POSTGRES_USER: amigoscode
       POSTGRES_PASSWORD: password
       PGDATA: /data/postgres
@@ -20,4 +21,3 @@ networks:
 
 volumes:
   db:
-
